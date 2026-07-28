@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gx Dikzz — Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#home" class="nav__brand">Trio<span>Fredika</span></a>
+    <nav class="nav__links">
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Projek</a>
+      <a href="#certs">Sertifikat</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <button class="sound-toggle" id="soundToggle" aria-label="Putar musik latar" title="Putar musik latar">
+      <span class="sound-toggle__dot"></span> MUSIK
+    </button>
+  </header>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__text">
+      <p class="eyebrow">// developer.log — status: shipping</p>
+      <h1 class="hero__title">Gx Dikzz</h1>
+      <p class="hero__role">Web &amp; WhatsApp Bot Developer</p>
+      <p class="hero__desc">
+        Halo, Saya Trio Fredika saya lulusan TJKT saya disini memiliki keahlian mengoding dan sudah membuat projek.
+        Bikin tools iseng jadi produk jadi — dari bot WhatsApp sampai web app
+        interaktif. Suka ngoprek JavaScript, ngulik API, dan bikin tampilan
+        yang ga generik.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Lihat Projek</a>
+        <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero__photo-wrap">
+      <div class="hero__photo-frame">
+        <img src="media/foto.jpg" alt="Foto Gx Dikzz" class="hero__photo" id="profilePhoto">
+        <div class="hero__photo-fallback" id="photoFallback">GX</div>
+      </div>
+      <span class="hero__photo-tag">checkpoint 01</span>
+    </div>
+  </section>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <!-- ============ ABOUT / SKILLS ============ -->
+  <section class="section" id="about">
+    <p class="eyebrow">01 — Tentang</p>
+    <h2 class="section__title">Siapa Gx Dikzz?</h2>
+    <p class="section__lead">
+      Halo, saya berlatar belakang berasal dari orang yang kurang mampu namun saya sudah menyelesaikan pendidikan. saya lulus baik dari SMK jurusan TJKT. dan saya semangat untuk bekerja.
+      Independent developer yang belajar sambil bikin project beneran.
+      Fokus di JavaScript, HTML/CSS, dan integrasi API pihak ketiga —
+      dari bot WhatsApp harian sampai web app dengan sentuhan visual yang
+      berani.
+    </p>
+  </section>
+
+  <section class="section" id="skills">
+    <p class="eyebrow">02 — Skill</p>
+    <h2 class="section__title">Yang Dikuasai</h2>
+    <ul class="skills">
+      <!-- EDIT: tambah / hapus / ganti skill sesuai kemampuan kamu -->
+      <li class="skills__item">JavaScript</li>
+      <li class="skills__item">HTML / CSS</li>
+      <li class="skills__item">WhatsApp Bot API</li>
+      <li class="skills__item">Web Audio API</li>
+      <li class="skills__item">Browser API Integration</li>
+      <li class="skills__item">UI Playful Design</li>
+      <li class="skills__item">Instalasi Windows</li>
+      <li class="skills__item">Konfigurasi Jaringan</li>
+    </ul>
+  </section>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <p class="eyebrow">03 — Projek</p>
+    <h2 class="section__title">Yang Sudah Dibangun</h2>
+    <div class="projects__grid" id="projectsGrid">
+    </div>
+  </section>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section" id="certs">
+    <p class="eyebrow">04 — Sertifikat</p>
+    <h2 class="section__title">Rak Sertifikat</h2>
+    <div class="cert-strip__wrap">
+      <button class="cert-nav cert-nav--left" id="certPrev" aria-label="Sebelumnya">‹</button>
+      <div class="cert-strip" id="certStrip">
+        <p class="cert-empty" id="certEmpty">Belum ada sertifikat. Tambahkan file ke <code>media/sertifikat/</code>.</p>
+      </div>
+      <button class="cert-nav cert-nav--right" id="certNext" aria-label="Berikutnya">›</button>
+    </div>
+  </section>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <p class="eyebrow">05 — Kontak</p>
+    <h2 class="section__title">Mau Kolaborasi?</h2>
+    <div class="contact__links">
+      <a href="https://wa.me/message/CG3PKD5V3RVXD1" class="btn btn--primary">WhatsApp</a>
+      <a href="https://youtube.com/@dikzzai" class="btn btn--ghost">YouTube</a>
+      <a href="https://chat.whatsapp.com/GkLTIzg5EfLFRDN1YCLc8A?s=cl&p=a&ilr=4&amv=3" class="btn btn--ghost">Grup Bot WA</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Gx Dikzz. Dibangun manual, bukan template.</span>
+  </footer>
+
+  <audio id="bgAudio" src="media/audio.mp3" loop preload="none"></audio>
+
+  <!-- Lightbox untuk preview sertifikat ukuran penuh -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">×</button>
+    <img src="" alt="Preview sertifikat" id="lightboxImg">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
