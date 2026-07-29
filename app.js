@@ -56,7 +56,7 @@ const CERT_FOLDER = 'media/sertifikat/';
 
 // Fallback manual kalau auto-detect gagal di hosting kamu.
 // Contoh: const MANUAL_CERTS = ['sertifikat-1.jpg', 'sertifikat-lomba.png'];
-const MANUAL_CERTS = [];
+const MANUAL_CERTS = ['sertifikat-pkl.jpg', 'sertifikat-tka.jpg'];
 
 async function detectCertificates(){
   try{
