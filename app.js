@@ -125,7 +125,7 @@ function wireCertNav(){
 }
 
 /* Geser otomatis tiap CERT_AUTO_MS; jeda sebentar kalau user lagi nyentuh/drag */
-const CERT_AUTO_MS = 3000;
+const CERT_AUTO_MS = 2000;
 function wireCertAutoScroll(){
   const strip = document.getElementById('certStrip');
   let holding = false, lastTouch = 0;
